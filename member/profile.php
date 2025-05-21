@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         // Handle image uploads
-        $photoPath = null;
+        $photoPath = /aupwu/uploads/photos/;
         if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
             $photoPath = uploadImage($_FILES['photo'], 'aupwu/uploads/photos');
             if (!$photoPath) {
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
         
-        $signaturePath = null;
+        $signaturePath = /aupwu/uploads/signatures/;
         if (isset($_FILES['signature']) && $_FILES['signature']['error'] === UPLOAD_ERR_OK) {
             $signaturePath = uploadImage($_FILES['signature'], 'aupwu/uploads/signatures', 400, 200);
             if (!$signaturePath) {
