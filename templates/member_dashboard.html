@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block title %}AUPWU Management System - Member Dashboard{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3">Member Dashboard</h1>
+    <span class="badge bg-success">Member Access</span>
+</div>
+
+<!-- Welcome Banner -->
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-md-2 text-center mb-3 mb-md-0">
+                <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                    <i class="fas fa-user fa-3x text-primary"></i>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h4>Welcome, {{ session.get('username') }}!</h4>
+                <p>Thank you for being a part of the All UP Workers Union. Here you can access your profile, participate in elections, and join committees.</p>
+                <a href="#" class="btn btn-primary">Complete Your Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- My Profile Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">My Profile</h5>
+            </div>
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="fas fa-id-card fa-3x text-primary"></i>
+                </div>
+                <h5>Personal Information</h5>
+                <p>View and update your personal and employment information.</p>
+                <a href="#" class="btn btn-outline-primary">Manage Profile</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- My Committees Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">My Committees</h5>
+            </div>
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="fas fa-users fa-3x text-primary"></i>
+                </div>
+                <h5>Committee Memberships</h5>
+                <p>View your committee assignments and responsibilities.</p>
+                <a href="#" class="btn btn-outline-primary">View Committees</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Elections Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Elections</h5>
+            </div>
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="fas fa-vote-yea fa-3x text-primary"></i>
+                </div>
+                <h5>Participate in Elections</h5>
+                <p>Cast your vote in active elections or view results.</p>
+                <div class="alert alert-info">
+                    <small>No active elections at this time.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Announcements -->
+    <div class="col-md-8 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Announcements</h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Welcome to the AUPWU Management System!</h5>
+                    <p>This system is designed to help manage member information, committee assignments, and voting processes for the All UP Workers Union.</p>
+                    <hr>
+                    <p class="mb-0">Please complete your profile to access all features.</p>
+                </div>
+                
+                <div class="alert alert-success">
+                    <h5 class="alert-heading">New Committee Openings!</h5>
+                    <p>We are looking for members to join various committees. Check the committees page for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Union Resources -->
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Union Resources</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="#" class="text-decoration-none">Union Constitution</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-calendar-alt me-2 text-primary"></i>
+                        <a href="#" class="text-decoration-none">Event Calendar</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-newspaper me-2 text-primary"></i>
+                        <a href="#" class="text-decoration-none">Newsletter Archive</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-question-circle me-2 text-primary"></i>
+                        <a href="#" class="text-decoration-none">FAQ</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <a href="#" class="text-decoration-none">Contact Directory</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

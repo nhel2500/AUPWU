@@ -1,0 +1,33 @@
+Create a 100% Xampp database for Union workers management AUPWU Management System, with admin, member, officers account, registration with Name, Address, Unit/College, Designation, Chapter, Date of Original Appointment, Date of Birth, Contact number, email, Committee (1. Human Resource Merit Promotion & Selection Board, 2. Human Resource Committee, 3. Janitorial Inspection Monitoring Team Committee, 4. Security Committee, 5. Sports and Development Committee, 6. Search Committee, 7. Rice Committee, 8. Freedom of Expression Committee, 9. Housing Committee, 10. Self-Built Housing Regulatory Committee, 11. Grievance Committee, 12. OASH Committee, 13. Occupational Health & Safety Committee, 14. TWGs, 15. Other (pls Specify)
+
+Organization no longer a member in and out of U.P.?
+Organization still member in and out of U.P.?
+Upload 1x1 photo
+Upload signature
+
+Our Mission
+To serve the public, promote public service, and contribute to the nation's development through a socially engaged community that upholds honor, excellence, and integrity.
+•	Advocate for workers' rights and welfare
+•	Ensure fair and just treatment in the workplace
+•	Promote professional development and growth
+•	Foster unity and solidarity among university employees
+Our Vision
+To become a great university that leads the development of a globally competitive Philippines.
+•	A strong and united workforce empowered to contribute to academic excellence
+•	A model organization for labor-management relations
+•	Champions of social justice and equality in the workplace
+•	Partners in building a progressive and globally competitive national university
+
+Our Location
+Magsaysay Ave. near corner Ylanan St., Diliman, Quezon City, Philippines
+Phone
+Tel No. 89818500
+Email
+allupworkersunion@up.edu.ph
+Office Hours
+Monday - Friday: 8:00 AM - 5:00 PM
+Create a voting functions, only member be able to run and able to vote
+
+Make all pages Theme Color Maroon.
+
+Create also a page that able to generate reports, demographic reports, able to print reports

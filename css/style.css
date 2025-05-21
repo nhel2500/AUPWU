@@ -1,0 +1,374 @@
+/* AUPWU Management System Custom Styles */
+
+/* Global Styles */
+:root {
+    --primary-color: #800000; /* Maroon */
+    --primary-dark: #600000;
+    --primary-light: #a00000;
+    --secondary-color: #f8f8f8;
+    --accent-color: #ffcc00;
+    --text-color: #333333;
+    --light-text-color: #ffffff;
+    --border-color: #dddddd;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #ef9393;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make container take up full height to push footer down */
+.container {
+    flex: 1 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--light-text-color);
+}
+
+.dropdown-item:active {
+    background-color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+}
+
+.card-header-primary {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border-bottom: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(128, 0, 0, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.375rem;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.form-section-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Tables */
+.table-responsive {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(128, 0, 0, 0.05);
+}
+
+/* DataTables Customization */
+div.dataTables_wrapper div.dataTables_filter input {
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    padding: 0.375rem 0.75rem;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    padding: 0.375rem 0.75rem;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.page-link {
+    color: var(--primary-color);
+}
+
+.page-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer h5, .footer h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card .card-body {
+    padding: 1.5rem;
+}
+
+.dashboard-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.dashboard-card .card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Statistics */
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.stat-card .stat-title {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+/* Profile */
+.profile-image {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.signature-image {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/* Status Badges */
+.badge-active {
+    background-color: var(--success-color);
+}
+
+.badge-inactive {
+    background-color: var(--danger-color);
+}
+
+.badge-in {
+    background-color: var(--info-color);
+}
+
+.badge-out {
+    background-color: var(--warning-color);
+}
+
+/* Committee Tags */
+.committee-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    background-color: rgba(128, 0, 0, 0.1);
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Voting System */
+.candidate-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-bottom: 1rem;
+}
+
+.candidate-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.candidate-card.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(128, 0, 0, 0.05);
+}
+
+.candidate-card .candidate-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* Reports */
+.report-filter-section {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.report-chart-container {
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.demographic-card {
+    height: 100%;
+}
+
+.print-section {
+    display: none;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-section {
+        display: block;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .stat-card .stat-number {
+        font-size: 2rem;
+    }
+    
+    .profile-header {
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin-bottom: 1rem;
+    }
+}

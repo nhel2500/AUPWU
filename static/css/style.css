@@ -1,0 +1,125 @@
+/* AUPWU Management System Custom Styles */
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #58021d;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card .icon {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+/* Stat cards on dashboards */
+.stat-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 5px;
+}
+
+.stat-title {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Form sections */
+.form-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+}
+
+.form-section-title {
+    margin-bottom: 1.5rem;
+    color: #0d6efd;
+}
+
+/* Card headers */
+.card-header-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Committee cards */
+.committee-card {
+    transition: all 0.3s;
+}
+
+.committee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Election candidate cards */
+.candidate-card {
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.candidate-card:hover {
+    border-color: #0d6efd;
+    transform: translateY(-5px);
+}
+
+.candidate-card.selected {
+    border-color: #0d6efd;
+    background-color: #f0f7ff;
+}
+
+/* Profile photo and signature containers */
+.image-container {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+/* Table customization */
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Custom buttons */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+}
